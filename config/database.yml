@@ -22,6 +22,4 @@ test:
 
 production:
   <<: *default
-  database: checkmodmatesapp_production
-  username: checkmodmatesapp
-  password: <%= ENV['SAMPLE_APP_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
