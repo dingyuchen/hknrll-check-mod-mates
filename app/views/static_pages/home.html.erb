@@ -1,10 +1,11 @@
-<%# <% provide(:title, "Home") %> %>
-<h1><%=yield(:title)%></h1>
-<p>
-  Get help on the Ruby on Rails Tutorial at the
-  <a href="http://www.railstutorial.org/help">Rails Tutorial help
-    section</a>.
-  To get help on this sample app, see the
-  <a href="http://www.railstutorial.org/book"><em>Ruby on Rails
-      Tutorial</em> book</a>.
-</p>
+<div class="center jumbotron">
+  <h1>Welcome to the Sample App</h1>
+  <h2>
+    This is the home page for the
+    <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+    sample application.
+  </h2>
+  <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</div>
+<%= link_to image_tag("rails.png", alt: "Rails logo"),
+            'http://rubyonrails.org/' %>
