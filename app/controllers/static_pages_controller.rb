@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# determine action for static pages
 class StaticPagesController < ApplicationController
   def home; end
 
